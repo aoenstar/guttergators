@@ -1,7 +1,4 @@
 <?php
-header("Set-Cookie: key4=value; path=/; HttpOnly; Secure; SameSite=Strict");
-session_start();
-
 include 'connect.php';
 
 ?>
@@ -62,7 +59,7 @@ include 'connect.php';
                   if($result)
                   {
                     $check= json_encode("true");
-                    echo '<div id="check"'.$check.'</div>';
+                    echo '<div id="check"></div>';
                 echo '
                 <form method="post" autocomplete="off" enctype="multipart/form-data" id="updateForm" action="update.php?id='.$currentID.'">
                 <div>
@@ -138,8 +135,6 @@ include 'connect.php';
                   }
                   else
                   {
-                    $check= JSON.parse("false");
-                    echo '<div id="check"'.$check.'</div>';
                     die(mysqli_error($con));
                   }
                 }

@@ -72,7 +72,7 @@ if(isset($_POST['submit']) && isset($_FILES['image1']))
   if($result)
   {
     echo "Data inserted successfully";
-    header("Location: index.php");
+    header("Location: ". $_SERVER['HTTP_REFERER']);
   }
   else
   {

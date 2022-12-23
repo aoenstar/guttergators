@@ -52,12 +52,13 @@ body{
 {
     background-color:  #b53318;
 }
+
 .show{
     visibility: visible;
 }
 
 table{
-    min-width: 80vh;
+    max-width: 90vw;
     margin: 70px auto;
     background: rgb(124,154,167);
 }
@@ -91,6 +92,7 @@ td{
 {
   width: 15vw;
 }
+
 tr:nth-child(even), table.list thread> tr{
     background-color: rgb(204,200,200);
 }

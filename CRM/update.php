@@ -93,7 +93,7 @@ if(isset($_GET['id']))
     if($result)
     {
       echo "Data inserted successfully";
-      header("Location: index.php");
+      header("Location:" . $_SERVER['HTTP_REFERER']);
     }
     else
     {

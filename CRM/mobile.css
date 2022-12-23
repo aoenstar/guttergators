@@ -1,0 +1,143 @@
+body{
+    background-color: #333333;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover{
+    z-index: 99;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.75);
+    display: flex;
+    visibility: hidden;
+}
+
+.logo
+{
+  width: 70vw;
+  text-align: center;
+}
+.popup2{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #494747;
+    width: 30vw;
+    height: 10vh;
+    top: 45%;
+    left: 45%;
+    border-radius: 10px;
+    z-index: 100;
+    visibility: hidden;
+    justify-content: center;
+}
+
+table{
+    max-width: 80vw;
+    margin: 5% auto;
+    background: rgb(124,154,167);
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(204,200,200);
+
+}
+
+#customers, #customers tbody, #customers tr, #customers td{
+    display: block;
+}
+
+
+td{
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 4px 5px;
+}
+
+input{
+    width:70vw;
+    padding:8px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="update"]{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    max-width: 33vw;
+}
+
+input[type="submit"]:hover, input[type="update"]:hover{
+    background: #4b99d8;
+}
+
+button{
+    background: #eee;
+    padding:6px 10px;
+    margin:5px 5px 5px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4b99d8 ;
+}
+
+.danger
+{
+    background-color:  #b53318;
+}
+
+#search
+{
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.hide
+{
+  position: fixed;
+  visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+#notes
+{
+  width: 75vw;
+  font-size: x-large;
+}
+
+#notesB
+{
+  width: 75vw;
+  font-size: x-large;
+}
+
+.info
+{
+      width: 90vw;
+      margin: 20px auto;
+      background: rgb(124,154,167);
+}
